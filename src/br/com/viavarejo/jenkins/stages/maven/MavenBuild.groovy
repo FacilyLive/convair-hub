@@ -1,10 +1,5 @@
 package br.com.viavarejo.jenkins.stages.maven
 
-class MavenBuildParameters {
-    String maven
-    String mavenSettingsConfig
-}
-
 class MavenBuild {
 
     static def use(
@@ -23,4 +18,10 @@ class MavenBuild {
                 shouldRun: shouldRun
         ]
     }
+}
+
+
+class MavenBuildParameters {
+    String maven
+    String mavenSettingsConfig
 }

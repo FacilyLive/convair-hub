@@ -1,10 +1,5 @@
 package br.com.viavarejo.jenkins.stages.git
 
-class GitVersionParameters {
-    String credentialsId
-    String userEmail
-    String userName
-}
 
 class GitVersion {
 
@@ -30,4 +25,10 @@ class GitVersion {
                 shouldRun: shouldRun
         ]
     }
+}
+
+class GitVersionParameters {
+    String credentialsId
+    String userEmail
+    String userName
 }

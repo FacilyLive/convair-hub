@@ -1,9 +1,5 @@
 package br.com.viavarejo.jenkins.stages.maven
 
-class MavenUnitTestParameters {
-    String maven
-    String mavenSettingsConfig
-}
 
 class MavenUnitTest {
 
@@ -23,4 +19,8 @@ class MavenUnitTest {
                 shouldRun: shouldRun
         ]
     }
+}
+class MavenUnitTestParameters {
+    String maven
+    String mavenSettingsConfig
 }

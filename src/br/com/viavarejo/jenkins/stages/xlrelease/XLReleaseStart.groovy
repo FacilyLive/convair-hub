@@ -1,12 +1,4 @@
 package br.com.viavarejo.jenkins.stages.xlrelease
-class XLReleaseStartParameters {
-    String overrideCredentialId
-    String serverCredentials
-    String template
-    String releaseTitle
-    ArrayList<LinkedHashMap<String, String>> variables
-    Boolean startRelease
-}
 /**
  * Invoke XL Release to Start a Release
  * This stage relies on XLRelease Plugin -> https://wiki.jenkins.io/display/JENKINS/XL+Release+Plugin
@@ -35,4 +27,12 @@ class XLReleaseStart {
                 shouldRun: shouldRun
         ]
     }
+}
+class XLReleaseStartParameters {
+    String overrideCredentialId
+    String serverCredentials
+    String template
+    String releaseTitle
+    ArrayList<LinkedHashMap<String, String>> variables
+    Boolean startRelease
 }

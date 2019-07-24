@@ -1,9 +1,5 @@
 package br.com.viavarejo.jenkins.stages.maven
 
-class MavenDeployParameters {
-    String maven
-    String mavenSettingsConfig
-}
 
 class MavenDeploy {
 
@@ -22,4 +18,8 @@ class MavenDeploy {
                 shouldRun: shouldRun
         ]
     }
+}
+class MavenDeployParameters {
+    String maven
+    String mavenSettingsConfig
 }

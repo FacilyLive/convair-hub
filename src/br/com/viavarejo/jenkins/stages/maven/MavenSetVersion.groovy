@@ -1,10 +1,5 @@
 package br.com.viavarejo.jenkins.stages.maven
 
-class MavenSetVersionParameters {
-    String maven
-    String mavenSettingsConfig
-}
-
 class MavenSetVersion {
 
     static def use(
@@ -24,3 +19,8 @@ class MavenSetVersion {
     }
 }
 
+
+class MavenSetVersionParameters {
+    String maven
+    String mavenSettingsConfig
+}

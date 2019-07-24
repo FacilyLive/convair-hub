@@ -1,11 +1,5 @@
 package br.com.viavarejo.jenkins.stages.openshift
 
-class OCTagImageParameters {
-    String cluster
-    String namespace
-    String fromImage
-    String toImage
-}
 /**
  * This Stage tags an Image using Openshift
  * Depends on Openshift Jenkins Plugin -> https://github.com/openshift/jenkins-client-plugin
@@ -26,4 +20,10 @@ class OCTagImage {
                 shouldRun: shouldRun
         ]
     }
+}
+class OCTagImageParameters {
+    String cluster
+    String namespace
+    String fromImage
+    String toImage
 }

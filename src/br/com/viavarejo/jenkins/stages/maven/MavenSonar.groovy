@@ -1,11 +1,5 @@
 package br.com.viavarejo.jenkins.stages.maven
 
-class MavenSonarParameters {
-    String maven
-    String mavenSettingsConfig
-    String springProfile
-    String readPropertiesPath
-}
 
 class MavenSonar {
 
@@ -31,4 +25,10 @@ class MavenSonar {
                 shouldRun: shouldRun
         ]
     }
+}
+class MavenSonarParameters {
+    String maven
+    String mavenSettingsConfig
+    String springProfile
+    String readPropertiesPath
 }

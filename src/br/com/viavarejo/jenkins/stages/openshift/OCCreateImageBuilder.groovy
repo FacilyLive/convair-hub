@@ -1,12 +1,4 @@
 package br.com.viavarejo.jenkins.stages.openshift
-
-class OCCreateImageBuilderParameter {
-    String clusterName
-    String namespace
-    String projectName
-    String imageStream
-    String buildType
-}
 /**
  * This Stage creates an ImageBuilder in Openshift
  * Depends on Openshift Jenkins Plugin -> https://github.com/openshift/jenkins-client-plugin
@@ -33,4 +25,12 @@ class OCCreateImageBuilder {
                 }
         ]
     }
+}
+
+class OCCreateImageBuilderParameter {
+    String clusterName
+    String namespace
+    String projectName
+    String imageStream
+    String buildType
 }

@@ -1,6 +1,3 @@
-class ${NAME}Parameter {
-
-}
 
 class ${NAME} {
     static def use(
@@ -14,4 +11,8 @@ class ${NAME} {
             }            
         ]        
     }
+}
+
+class ${NAME}Parameter {
+
 }
