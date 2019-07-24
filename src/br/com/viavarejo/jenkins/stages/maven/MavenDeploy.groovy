@@ -1,4 +1,4 @@
-package br.com.viavarejo.jornada.jenkins.stages.maven
+package br.com.viavarejo.jenkins.stages.maven
 
 class MavenDeployParameters {
     String maven

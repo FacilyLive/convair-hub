@@ -22,7 +22,7 @@ a **parameters** object, and a **shouldRun** object. It's recommended that they 
 Example of a Stage:
 
 ```Groovy
-package br.com.viavarejo.jornada.jenkins.stages.git
+package br.com.viavarejo.jenkins.stages.git
 
 class GitVersionParameters {
     String credentialsId
@@ -65,7 +65,7 @@ This stage can be consumed in the Jenkinsfile, as such:
 @Library("convair") _
 @Library("convair-hub")
 
-import br.com.viavarejo.jornada.jenkins.stages.git.*
+import br.com.viavarejo.jenkins.stages.git.*
 
 Convair {
   
@@ -86,7 +86,7 @@ Convair {
 @Library("convair") _
 @Library("convair-hub")
 
-import br.com.viavarejo.jornada.jenkins.stages.git.*
+import br.com.viavarejo.jenkins.stages.git.*
 
 Convair {
   
@@ -109,7 +109,7 @@ Convair {
 @Library("convair") _
 @Library("convair-hub")
 
-import br.com.viavarejo.jornada.jenkins.stages.git.*
+import br.com.viavarejo.jenkins.stages.git.*
 
 Convair {
   

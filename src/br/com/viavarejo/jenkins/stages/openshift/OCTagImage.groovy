@@ -1,4 +1,4 @@
-package br.com.viavarejo.jornada.jenkins.stages.openshift
+package br.com.viavarejo.jenkins.stages.openshift
 
 class OCTagImageParameters {
     String cluster

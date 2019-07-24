@@ -1,4 +1,4 @@
-package br.com.viavarejo.jornada.jenkins.stages.git
+package br.com.viavarejo.jenkins.stages.git
 
 class GitVersionParameters {
     String credentialsId

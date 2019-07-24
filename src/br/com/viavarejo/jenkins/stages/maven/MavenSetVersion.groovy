@@ -1,26 +1,26 @@
-package br.com.viavarejo.jornada.jenkins.stages.maven
+package br.com.viavarejo.jenkins.stages.maven
 
-class MavenBuildParameters {
+class MavenSetVersionParameters {
     String maven
     String mavenSettingsConfig
 }
 
-class MavenBuild {
+class MavenSetVersion {
 
     static def use(
-            MavenBuildParameters parameters = new MavenBuildParameters(
+            MavenSetVersionParameters parameters = new MavenSetVersionParameters(
                     maven: 'M3',
                     mavenSettingsConfig: 'maven-settings'
             ),
-            Closure shouldRun = { true }
-    ) {
+            Closure shouldRun = { env.SHOULD_DEPLOY }) {
         return [
                 run      : {
                     withMaven(maven: parameters.maven, mavenSettingsConfig: parameters.mavenSettingsConfig) {
-                        sh 'mvn clean package -DskipTests'
+                        sh "mvn versions:set -DnewVersion=${env.VERSION} -DgenerateBackupPoms=false"
                     }
                 },
                 shouldRun: shouldRun
         ]
     }
 }
+

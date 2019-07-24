@@ -1,4 +1,4 @@
-package br.com.viavarejo.jornada.jenkins.stages.xlrelease
+package br.com.viavarejo.jenkins.stages.xlrelease
 class XLReleaseStartParameters {
     String overrideCredentialId
     String serverCredentials
